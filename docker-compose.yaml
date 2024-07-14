@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./coin-calculator-app
+    ports:
+      - "3002:3002"
+    networks:
+      - oracle_challenge_network
+
+  backend:
+    build:
+      context: ./CalcMinCoins
+    ports:
+      - "9090:9090"
+    networks:
+      - oracle_challenge_network
+
+networks:
+  oracle_challenge_network:
+    driver: bridge
