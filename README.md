@@ -1,4 +1,4 @@
-# oracle challenge
+# oracle challenge(Please check Master)
 Coin calculator application . Separate directories for frontend and backend and docker-compose.yml at the root to orchestrate the container.
 Prerequisites
 Docker installed
